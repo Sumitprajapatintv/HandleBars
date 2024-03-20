@@ -1,0 +1,29 @@
+<h1>Hello World</h1>
+
+<p>descrition is {{des}}</p>
+
+{{#if isCompleted}}
+  <p>my name is {{name}}</p>
+
+{{else}}
+  <p>No Name found</p>
+{{/if}}
+
+{{#unless isDisplayList}}
+  <ul>
+    <li>Hello</li>
+    <li>Hello Ygana</li>
+    <li>Hello Hiren </li>
+  </ul>
+
+{{/unless}}
+
+{{#each people as |value key|}}
+
+  <h1>{{key}}{{value}}</h1>
+{{/each}}
+
+{{#each myObj as |value key|}}
+
+  <h1>{{key}}:{{value}}</h1>
+{{/each}}
